@@ -4,6 +4,31 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: monospace;
+        }
+        canvas {
+            display: block;
+			image-rendering: pixelated;
+			image-rendering: -moz-crisp-edges;
+			image-rendering: crisp-edges;
+        }
+        .controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-size: 14px;
+        }
+    	</style>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
